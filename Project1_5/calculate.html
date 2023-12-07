@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediCare Center | Calculate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="container my-5 py-3">
+
+        <h1 class="my-5 text-center">Compute Mathematical Formula</h1>
+
+        <div class="col-md-6 bg-light p-3 shadow mx-auto">
+          <!-- <h2 class="mb-4 text-center">Contact Us</h2> -->
+          <div class="row g-3">
+              <div class="col-12">
+                <label for="inputEmail4" class="form-label">Calculate Area </label>
+                <select class="area form-select" id="area" aria-label="Default select example">
+                  <option selected>Choose area to calculate</option>
+                  <option value="circle">Area of Circle</option>
+                  <option value="triangle">Area of Triangle</option>
+                  <option value="sphere">Area of Sphere</option>
+                  <option value="cube">Area of Cube</option>
+                </select>
+              </div>
+              <div class="col-12">
+                  <label for="inputAddress" class="form-label">Enter the Area</label>
+                  <input type="text" class="form-control length" id="length" placeholder="Enter the length side or radius">
+              </div>
+
+              <div class="col-12">
+                  <button type="submit" id="calcBtn" class="btn btn-primary btn-block"><i class="bi bi-calculator"></i> Calculate Area </button>
+              </div>
+              <!-- onclick="areaOfCircle2()" -->
+              <div id="result" class="my-3 fw-bold fs-4 text-success"></div>
+          </div> 
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+      <div class="container">
+        <!-- Footer -->
+        <footer class="footer pt-4 pt-md-5 border-top">
+          
+        </footer>
+        <!-- End Footer -->
+      </div>
+    </div>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script src="/js/script.js"></script>
+    <script src="/js/footer.js"></script>
+  </body>
+</html>

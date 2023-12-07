@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MediCare Center | Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+      .form-group small {
+        position: absolute;
+        margin: 3px;
+        color: red;
+        visibility: hidden;
+      }
+
+      .form-group.success input {
+        border: 2px solid green;
+      }
+      .form-group.error input {
+        border: 2px solid red;
+      }
+      .form-group.success select {
+        border: 2px solid green;
+      }
+      .form-group.error select {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Topbar -->
+    <!-- <div class="container-fluid bg-light">
+      <div class="container my-5 py-3 text-center">
+          <h5 class="display-6 fw-normal my-5">Contact Us</h5>
+      </div>
+  </div> -->
+  <!-- End Topbar -->
+
+  <div class="container my-5 py-3">
+      <div class="row justify-content-center align-content-center my-5">
+          <div class="col-md-6 bg-light p-3 shadow">
+            <h2 class="mb-4 text-center display-6 fw-bold">FeedBack</h2>
+            <form name="frm1">
+              <div class="row g-3 form">
+                
+                <div class="row mb-2">
+                  <div class="form-group col-md-6">
+                    <label for="username" name="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="txtUserName" name="username" placeholder="Enter Username" />
+                    <small>Error Message</small>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email" name="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="txtEmail" name="email" placeholder="Enter Email" />
+                    <small>Error Message</small>
+                  </div>
+                </div>
+  
+                <div class="form-group col-12 mb-3">
+                  <label for="area" name="area" class="form-label">Calculate Area </label>
+                  <select class="form-select" id="txtArea" name="area" aria-label="Default select example">
+                    <option selected>Choose area to calculate</option>
+                    <option value="circle">Area of Circle</option>
+                    <option value="triangle">Area of Triangle</option>
+                    <option value="sphere">Area of Sphere</option>
+                    <option value="cube">Area of Cube</option>
+                  </select>
+                  <small>Error Message</small>
+                </div>
+  
+                <div class="row my-4">
+                  <div class="form-group col-12">
+                    <label for="gender" name="gender" class="form-label">Gender </label>
+                    <div class="form-group col-md-6">
+                      <input type="radio" class="form-check-input" name="gender[]" value="female"> Female
+                      <input type="radio" class="form-check-input" name="gender[]" value="male"> Male
+                    </div>
+                    <!-- <small>Error Message</small> -->
+                    <div style="visibility:hidden; color:red; " id="rd_option_error"></div>
+                  </div>
+                </div>
+  
+                <div class="row my-2">
+                  <div class="form-group col-12">
+                    <label for="area" name="area" class="form-label">Checkbox Title</label>
+                    <div class="form-check">
+                      <input type="checkbox" name="langs[]" id="langs_javascript" value="JavaScript"> 
+                      <label for="langs_javascript">JavaScript</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" name="langs[]" id="langs_perl" value="Perl"> 
+                      <label for="langs_javascript">Perl</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" name="langs[]" id="langs_php" value="PHP"> 
+                      <label for="langs_javascript">PHP</label>
+                    </div>
+                    <div class="form-check">
+                      <input type="checkbox" name="langs[]" id="langs_react" value="React"> 
+                      <label for="langs_javascript">React</label>
+                    </div>
+                    <!-- <small>Error Message</small> -->
+                    <div style="visibility:hidden; color:red; " id="chk_option_error"></div>
+                  </div>
+                </div>
+    
+                <div class="col-12">
+                    <button type="submit" id="calcBtn" class="btn btn-primary btn-block"><i class="bi bi-calculator"></i> Submit Feedback </button>
+                </div>
+                <!-- onclick="areaOfCircle2()" -->
+                <!-- <div id="result" class="my-3 fw-bold fs-4 text-success"></div> -->
+              </div>
+            </form>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-fluid bg-dark">
+      <div class="container">
+        <!-- Footer -->
+        <footer class="footer pt-4 pt-md-5 border-top">
+          
+        </footer>
+        <!-- End Footer -->
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/feedback.js"></script>
+    <script src="/js/footer.js"></script>
+  </body>
+</html>
